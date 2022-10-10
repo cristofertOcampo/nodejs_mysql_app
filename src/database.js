@@ -23,6 +23,6 @@ pool.getConnection((err, connection) => {
 })
 
 // Promisify Pool Query
-pool.query = promisify(pool.query); //Cada Vez que yo quiera hacer una consulta en la DB voy a poner utilizar async await o promesas
+pool.query = promisify(pool.query); //Cada Vez que yo quiera hacer una consulta en la DB voy a poder utilizar async await o promesas
 
 module.exports = pool;
